@@ -1,0 +1,1270 @@
+EESchema Schematic File Version 2
+LIBS:4port-usb-hub-rescue
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Xicor
+LIBS:Zilog
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pirinel-alpha-cache
+LIBS:pirinel-alpha-rescue
+LIBS:4port-usb-hub-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_A-RESCUE-4port-usb-hub P2
+U 1 1 57203432
+P 3850 3600
+F 0 "P2" H 4050 3400 50  0000 C CNN
+F 1 "USB_A" H 3800 3800 50  0000 C CNN
+F 2 "Connect:USB_A_Vertical" V 3800 3500 50  0001 C CNN
+F 3 "" V 3800 3500 50  0000 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 3900 3    60   Input ~ 0
+D1+
+Text GLabel 3750 3900 3    60   Input ~ 0
+D1-
+$Comp
+L GND #PWR6
+U 1 1 57254FCE
+P 3950 4400
+F 0 "#PWR6" H 3950 4150 50  0001 C CNN
+F 1 "GND" H 3950 4250 50  0000 C CNN
+F 2 "" H 3950 4400 50  0000 C CNN
+F 3 "" H 3950 4400 50  0000 C CNN
+	1    3950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 57267B3C
+P 3150 4650
+F 0 "#PWR4" H 3150 4400 50  0001 C CNN
+F 1 "GND" H 3150 4500 50  0000 C CNN
+F 2 "" H 3150 4650 50  0000 C CNN
+F 3 "" H 3150 4650 50  0000 C CNN
+	1    3150 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR17
+U 1 1 5727727D
+P 6300 2700
+F 0 "#PWR17" H 6300 2450 50  0001 C CNN
+F 1 "GND" H 6300 2550 50  0000 C CNN
+F 2 "" H 6300 2700 50  0000 C CNN
+F 3 "" H 6300 2700 50  0000 C CNN
+	1    6300 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L2
+U 1 1 5727C0F7
+P 3650 4350
+AR Path="/5727C0F7" Ref="L2"  Part="1" 
+AR Path="/5720316C/5727C0F7" Ref="L2"  Part="1" 
+F 0 "L2" H 3650 4525 50  0000 C CNN
+F 1 "600R/2A" V 3675 4175 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3650 4350 50  0001 C CNN
+F 3 "" H 3650 4350 50  0000 C CNN
+	1    3650 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C13
+U 1 1 5727C918
+P 3400 3950
+F 0 "C13" H 3425 4050 50  0000 L CNN
+F 1 "0.1uF" H 3425 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3438 3800 50  0001 C CNN
+F 3 "" H 3400 3950 50  0000 C CNN
+	1    3400 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5727CAAA
+P 3150 3950
+F 0 "#PWR3" H 3150 3700 50  0001 C CNN
+F 1 "GND" H 3150 3800 50  0000 C CNN
+F 2 "" H 3150 3950 50  0000 C CNN
+F 3 "" H 3150 3950 50  0000 C CNN
+	1    3150 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L4
+U 1 1 5727D164
+P 6300 2900
+AR Path="/5727D164" Ref="L4"  Part="1" 
+AR Path="/5720316C/5727D164" Ref="L4"  Part="1" 
+F 0 "L4" H 6300 3075 50  0000 C CNN
+F 1 "600R/2A" V 6325 2725 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0000 C CNN
+	1    6300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 57C0F8AF
+P 3350 4650
+F 0 "C2" H 3375 4750 50  0000 L CNN
+F 1 "100uF/16V/LOWESR/105C" H 2850 4550 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 3388 4500 50  0001 C CNN
+F 3 "" H 3350 4650 50  0000 C CNN
+	1    3350 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-4port-usb-hub P1
+U 1 1 57C1169C
+P 5350 3600
+F 0 "P1" H 5550 3400 50  0000 C CNN
+F 1 "USB_A" H 5300 3800 50  0000 C CNN
+F 2 "Connect:USB_A_Vertical" V 5300 3500 50  0001 C CNN
+F 3 "" V 5300 3500 50  0000 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 3900 3    60   Input ~ 0
+D2+
+Text GLabel 5250 3900 3    60   Input ~ 0
+D2-
+$Comp
+L GND #PWR13
+U 1 1 57C116A5
+P 5450 4400
+F 0 "#PWR13" H 5450 4150 50  0001 C CNN
+F 1 "GND" H 5450 4250 50  0000 C CNN
+F 2 "" H 5450 4400 50  0000 C CNN
+F 3 "" H 5450 4400 50  0000 C CNN
+	1    5450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 57C116AE
+P 4650 4650
+F 0 "#PWR10" H 4650 4400 50  0001 C CNN
+F 1 "GND" H 4650 4500 50  0000 C CNN
+F 2 "" H 4650 4650 50  0000 C CNN
+F 3 "" H 4650 4650 50  0000 C CNN
+	1    4650 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L3
+U 1 1 57C116B7
+P 5150 4350
+F 0 "L3" H 5150 4525 50  0000 C CNN
+F 1 "600R/2A" V 5175 4175 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5150 4350 50  0001 C CNN
+F 3 "" H 5150 4350 50  0000 C CNN
+	1    5150 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C5
+U 1 1 57C116BF
+P 4900 3950
+F 0 "C5" H 4925 4050 50  0000 L CNN
+F 1 "0.1uF" H 4925 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4938 3800 50  0001 C CNN
+F 3 "" H 4900 3950 50  0000 C CNN
+	1    4900 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 57C116C7
+P 4650 3950
+F 0 "#PWR9" H 4650 3700 50  0001 C CNN
+F 1 "GND" H 4650 3800 50  0000 C CNN
+F 2 "" H 4650 3950 50  0000 C CNN
+F 3 "" H 4650 3950 50  0000 C CNN
+	1    4650 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C3
+U 1 1 57C116CE
+P 4850 4650
+F 0 "C3" H 4875 4750 50  0000 L CNN
+F 1 "100uF/16V/LOWESR/105C" H 4350 4550 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 4888 4500 50  0001 C CNN
+F 3 "" H 4850 4650 50  0000 C CNN
+	1    4850 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-4port-usb-hub P3
+U 1 1 57C120F9
+P 6750 3600
+F 0 "P3" H 6950 3400 50  0000 C CNN
+F 1 "USB_A" H 6700 3800 50  0000 C CNN
+F 2 "Connect:USB_A_Vertical" V 6700 3500 50  0001 C CNN
+F 3 "" V 6700 3500 50  0000 C CNN
+	1    6750 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 3900 3    60   Input ~ 0
+D3+
+Text GLabel 6650 3900 3    60   Input ~ 0
+D3-
+$Comp
+L GND #PWR18
+U 1 1 57C12102
+P 6850 4400
+F 0 "#PWR18" H 6850 4150 50  0001 C CNN
+F 1 "GND" H 6850 4250 50  0000 C CNN
+F 2 "" H 6850 4400 50  0000 C CNN
+F 3 "" H 6850 4400 50  0000 C CNN
+	1    6850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 57C1210B
+P 6050 4650
+F 0 "#PWR16" H 6050 4400 50  0001 C CNN
+F 1 "GND" H 6050 4500 50  0000 C CNN
+F 2 "" H 6050 4650 50  0000 C CNN
+F 3 "" H 6050 4650 50  0000 C CNN
+	1    6050 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L5
+U 1 1 57C12114
+P 6550 4350
+F 0 "L5" H 6550 4525 50  0000 C CNN
+F 1 "600R/2A" V 6575 4175 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6550 4350 50  0001 C CNN
+F 3 "" H 6550 4350 50  0000 C CNN
+	1    6550 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C7
+U 1 1 57C1211C
+P 6300 3950
+F 0 "C7" H 6325 4050 50  0000 L CNN
+F 1 "0.1uF" H 6325 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6338 3800 50  0001 C CNN
+F 3 "" H 6300 3950 50  0000 C CNN
+	1    6300 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR15
+U 1 1 57C12124
+P 6050 3950
+F 0 "#PWR15" H 6050 3700 50  0001 C CNN
+F 1 "GND" H 6050 3800 50  0000 C CNN
+F 2 "" H 6050 3950 50  0000 C CNN
+F 3 "" H 6050 3950 50  0000 C CNN
+	1    6050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C6
+U 1 1 57C1212B
+P 6250 4650
+F 0 "C6" H 6275 4750 50  0000 L CNN
+F 1 "100uF/16V/LOWESR/105C" H 5750 4550 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 6288 4500 50  0001 C CNN
+F 3 "" H 6250 4650 50  0000 C CNN
+	1    6250 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-4port-usb-hub P4
+U 1 1 57C12133
+P 8250 3600
+F 0 "P4" H 8450 3400 50  0000 C CNN
+F 1 "USB_A" H 8200 3800 50  0000 C CNN
+F 2 "Connect:USB_A_Vertical" V 8200 3500 50  0001 C CNN
+F 3 "" V 8200 3500 50  0000 C CNN
+	1    8250 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8250 3900 3    60   Input ~ 0
+D4+
+Text GLabel 8150 3900 3    60   Input ~ 0
+D4-
+$Comp
+L GND #PWR23
+U 1 1 57C1213C
+P 8350 4400
+F 0 "#PWR23" H 8350 4150 50  0001 C CNN
+F 1 "GND" H 8350 4250 50  0000 C CNN
+F 2 "" H 8350 4400 50  0000 C CNN
+F 3 "" H 8350 4400 50  0000 C CNN
+	1    8350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR21
+U 1 1 57C12145
+P 7550 4650
+F 0 "#PWR21" H 7550 4400 50  0001 C CNN
+F 1 "GND" H 7550 4500 50  0000 C CNN
+F 2 "" H 7550 4650 50  0000 C CNN
+F 3 "" H 7550 4650 50  0000 C CNN
+	1    7550 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L6
+U 1 1 57C1214E
+P 8050 4350
+F 0 "L6" H 8050 4525 50  0000 C CNN
+F 1 "600R/2A" V 8075 4175 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8050 4350 50  0001 C CNN
+F 3 "" H 8050 4350 50  0000 C CNN
+	1    8050 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C9
+U 1 1 57C12156
+P 7800 3950
+F 0 "C9" H 7825 4050 50  0000 L CNN
+F 1 "0.1uF" H 7825 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7838 3800 50  0001 C CNN
+F 3 "" H 7800 3950 50  0000 C CNN
+	1    7800 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR20
+U 1 1 57C1215E
+P 7550 3950
+F 0 "#PWR20" H 7550 3700 50  0001 C CNN
+F 1 "GND" H 7550 3800 50  0000 C CNN
+F 2 "" H 7550 3950 50  0000 C CNN
+F 3 "" H 7550 3950 50  0000 C CNN
+	1    7550 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C8
+U 1 1 57C12165
+P 7750 4650
+F 0 "C8" H 7775 4750 50  0000 L CNN
+F 1 "100uF/16V/LOWESR/105C" H 7250 4550 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 7788 4500 50  0001 C CNN
+F 3 "" H 7750 4650 50  0000 C CNN
+	1    7750 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L GL850G U2
+U 1 1 57C13BF8
+P 6650 6900
+F 0 "U2" H 6650 8000 60  0000 C CNN
+F 1 "GL850G" H 6700 5750 60  0000 C CNN
+F 2 "Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm" H 6800 6000 60  0001 C CNN
+F 3 "" H 6800 6000 60  0001 C CNN
+	1    6650 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 5950 2    60   Input ~ 0
+D1+
+Text GLabel 7350 6100 2    60   Input ~ 0
+D1-
+Text GLabel 5950 6250 0    60   Input ~ 0
+D2+
+Text GLabel 5950 6100 0    60   Input ~ 0
+D2-
+Text GLabel 5950 7000 0    60   Input ~ 0
+D3-
+Text GLabel 5950 7150 0    60   Input ~ 0
+D3+
+Text GLabel 5950 7450 0    60   Input ~ 0
+D4-
+Text GLabel 5950 7600 0    60   Input ~ 0
+D4+
+$Comp
+L GND #PWR14
+U 1 1 57C151E2
+P 5850 7900
+F 0 "#PWR14" H 5850 7650 50  0001 C CNN
+F 1 "GND" H 5850 7750 50  0000 C CNN
+F 2 "" H 5850 7900 50  0000 C CNN
+F 3 "" H 5850 7900 50  0000 C CNN
+	1    5850 7900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR19
+U 1 1 57C152E9
+P 7450 7900
+F 0 "#PWR19" H 7450 7650 50  0001 C CNN
+F 1 "GND" H 7450 7750 50  0000 C CNN
+F 2 "" H 7450 7900 50  0000 C CNN
+F 3 "" H 7450 7900 50  0000 C CNN
+	1    7450 7900
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7350 6850
+NoConn ~ 7350 7150
+NoConn ~ 7350 7300
+$Comp
+L Crystal Y1
+U 1 1 57C15F45
+P 5450 6750
+F 0 "Y1" H 5450 6900 50  0000 C CNN
+F 1 "12Mhz" H 5450 6600 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-SD_SMD" H 5450 6750 50  0001 C CNN
+F 3 "" H 5450 6750 50  0000 C CNN
+	1    5450 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C10
+U 1 1 57C160B2
+P 5050 6600
+F 0 "C10" H 5075 6700 50  0000 L CNN
+F 1 "33pF" H 5075 6500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5088 6450 50  0001 C CNN
+F 3 "" H 5050 6600 50  0000 C CNN
+	1    5050 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C14
+U 1 1 57C16171
+P 5050 6900
+F 0 "C14" H 5075 7000 50  0000 L CNN
+F 1 "33pF" H 5075 6800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5088 6750 50  0001 C CNN
+F 3 "" H 5050 6900 50  0000 C CNN
+	1    5050 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 57C165FB
+P 4600 6750
+F 0 "#PWR8" H 4600 6500 50  0001 C CNN
+F 1 "GND" H 4600 6600 50  0000 C CNN
+F 2 "" H 4600 6750 50  0000 C CNN
+F 3 "" H 4600 6750 50  0000 C CNN
+	1    4600 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-4port-usb-hub R20
+U 1 1 57C1787F
+P 7550 7450
+F 0 "R20" V 7630 7450 50  0000 C CNN
+F 1 "47k" V 7550 7450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7480 7450 50  0001 C CNN
+F 3 "" H 7550 7450 50  0000 C CNN
+	1    7550 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-4port-usb-hub R21
+U 1 1 57C17A3A
+P 7550 7600
+F 0 "R21" V 7630 7600 50  0000 C CNN
+F 1 "10k" V 7550 7600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7480 7600 50  0001 C CNN
+F 3 "" H 7550 7600 50  0000 C CNN
+	1    7550 7600
+	0    1    1    0   
+$EndComp
+Text Label 7350 6550 0    60   ~ 0
+V33
+Text Label 7850 7550 0    60   ~ 0
+V33
+$Comp
+L C-RESCUE-4port-usb-hub C22
+U 1 1 57C18370
+P 8300 6700
+F 0 "C22" H 8325 6800 50  0000 L CNN
+F 1 "10uF/6.3V" V 8325 6600 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8338 6550 50  0001 C CNN
+F 3 "" H 8300 6700 50  0000 C CNN
+	1    8300 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C23
+U 1 1 57C187BE
+P 8300 6900
+F 0 "C23" H 8325 7000 50  0000 L CNN
+F 1 "100nF" V 8325 6800 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8338 6750 50  0001 C CNN
+F 3 "" H 8300 6900 50  0000 C CNN
+	1    8300 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR24
+U 1 1 57C188FC
+P 8650 6700
+F 0 "#PWR24" H 8650 6450 50  0001 C CNN
+F 1 "GND" H 8650 6550 50  0000 C CNN
+F 2 "" H 8650 6700 50  0000 C CNN
+F 3 "" H 8650 6700 50  0000 C CNN
+	1    8650 6700
+	0    -1   -1   0   
+$EndComp
+Text Label 5950 7300 2    60   ~ 0
+AVDD
+Text Label 5950 6550 2    60   ~ 0
+AVDD
+Text Label 5950 5950 2    60   ~ 0
+AVDD
+$Comp
+L C-RESCUE-4port-usb-hub C17
+U 1 1 57C19C01
+P 3600 7800
+F 0 "C17" H 3625 7900 50  0000 L CNN
+F 1 "100nF" V 3625 7700 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3638 7650 50  0001 C CNN
+F 3 "" H 3600 7800 50  0000 C CNN
+	1    3600 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C18
+U 1 1 57C19CFB
+P 3850 7800
+F 0 "C18" H 3875 7900 50  0000 L CNN
+F 1 "100nF" V 3875 7700 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3888 7650 50  0001 C CNN
+F 3 "" H 3850 7800 50  0000 C CNN
+	1    3850 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C20
+U 1 1 57C19D6A
+P 4100 7800
+F 0 "C20" H 4125 7900 50  0000 L CNN
+F 1 "100nF" V 4125 7700 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4138 7650 50  0001 C CNN
+F 3 "" H 4100 7800 50  0000 C CNN
+	1    4100 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L7
+U 1 1 57C1B0C9
+P 3350 7300
+F 0 "L7" H 3350 7475 50  0000 C CNN
+F 1 "600R/2A" V 3375 7125 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3350 7300 50  0001 C CNN
+F 3 "" H 3350 7300 50  0000 C CNN
+	1    3350 7300
+	1    0    0    -1  
+$EndComp
+Text Label 4250 7300 0    60   ~ 0
+AVDD
+$Comp
+L C-RESCUE-4port-usb-hub C15
+U 1 1 57C1BB00
+P 2900 7850
+F 0 "C15" H 2925 7950 50  0000 L CNN
+F 1 "100nF" V 2925 7750 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2938 7700 50  0001 C CNN
+F 3 "" H 2900 7850 50  0000 C CNN
+	1    2900 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-4port-usb-hub C16
+U 1 1 57C1BC3D
+P 3100 7850
+F 0 "C16" H 3125 7950 50  0000 L CNN
+F 1 "10uF/6.3V" V 3125 7750 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3138 7700 50  0001 C CNN
+F 3 "" H 3100 7850 50  0000 C CNN
+	1    3100 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3900 3750 3900
+Wire Wire Line
+	3950 3900 3950 4400
+Wire Wire Line
+	3650 4500 3650 4800
+Wire Wire Line
+	3150 4650 3200 4650
+Wire Wire Line
+	3500 4650 3650 4650
+Connection ~ 3650 4650
+Wire Wire Line
+	3650 3900 3650 4200
+Wire Wire Line
+	3550 3950 3650 3950
+Connection ~ 3650 3950
+Wire Wire Line
+	3150 3950 3250 3950
+Wire Wire Line
+	6300 2750 6300 2700
+Wire Wire Line
+	3850 3900 3850 3900
+Wire Wire Line
+	5250 3900 5250 3900
+Wire Wire Line
+	5450 3900 5450 4400
+Wire Wire Line
+	5150 4500 5150 4800
+Wire Wire Line
+	4650 4650 4700 4650
+Wire Wire Line
+	5000 4650 5150 4650
+Connection ~ 5150 4650
+Wire Wire Line
+	5150 3900 5150 4200
+Wire Wire Line
+	5050 3950 5150 3950
+Connection ~ 5150 3950
+Wire Wire Line
+	4650 3950 4750 3950
+Wire Wire Line
+	5350 3900 5350 3900
+Wire Wire Line
+	6650 3900 6650 3900
+Wire Wire Line
+	6850 3900 6850 4400
+Wire Wire Line
+	6550 4500 6550 4800
+Wire Wire Line
+	6050 4650 6100 4650
+Wire Wire Line
+	6400 4650 6550 4650
+Connection ~ 6550 4650
+Wire Wire Line
+	6550 3900 6550 4200
+Wire Wire Line
+	6450 3950 6550 3950
+Connection ~ 6550 3950
+Wire Wire Line
+	6050 3950 6150 3950
+Wire Wire Line
+	6750 3900 6750 3900
+Wire Wire Line
+	8150 3900 8150 3900
+Wire Wire Line
+	8350 3900 8350 4400
+Wire Wire Line
+	8050 4500 8050 4800
+Wire Wire Line
+	7550 4650 7600 4650
+Wire Wire Line
+	7900 4650 8050 4650
+Connection ~ 8050 4650
+Wire Wire Line
+	8050 3900 8050 4200
+Wire Wire Line
+	7950 3950 8050 3950
+Connection ~ 8050 3950
+Wire Wire Line
+	7550 3950 7650 3950
+Wire Wire Line
+	8250 3900 8250 3900
+Wire Wire Line
+	4150 3500 4150 3200
+Wire Wire Line
+	4150 3200 8550 3200
+Wire Wire Line
+	5650 3200 5650 3500
+Wire Wire Line
+	7050 3200 7050 3500
+Connection ~ 5650 3200
+Wire Wire Line
+	8550 3200 8550 3500
+Connection ~ 7050 3200
+Wire Wire Line
+	6300 3050 6300 3200
+Connection ~ 6300 3200
+Wire Wire Line
+	5850 7900 5950 7900
+Wire Wire Line
+	7350 7900 7450 7900
+Wire Wire Line
+	4700 6600 4700 6900
+Wire Wire Line
+	4700 6600 4900 6600
+Wire Wire Line
+	4700 6900 4900 6900
+Connection ~ 4700 6750
+Wire Wire Line
+	5200 6600 5650 6600
+Wire Wire Line
+	5650 6600 5650 6700
+Wire Wire Line
+	5650 6700 5950 6700
+Connection ~ 5450 6600
+Wire Wire Line
+	5200 6900 5650 6900
+Wire Wire Line
+	5650 6900 5650 6850
+Wire Wire Line
+	5650 6850 5950 6850
+Connection ~ 5450 6900
+Wire Wire Line
+	4700 6750 4600 6750
+Wire Wire Line
+	7350 7450 7400 7450
+Wire Wire Line
+	7350 7600 7400 7600
+Wire Wire Line
+	7700 7450 7850 7450
+Wire Wire Line
+	7850 7450 7850 7600
+Wire Wire Line
+	7850 7600 7700 7600
+Wire Wire Line
+	7350 6700 8150 6700
+Wire Wire Line
+	8450 6700 8650 6700
+Wire Wire Line
+	8000 6700 8000 6900
+Wire Wire Line
+	8000 6900 8150 6900
+Connection ~ 8000 6700
+Wire Wire Line
+	8450 6900 8550 6900
+Wire Wire Line
+	8550 6900 8550 6700
+Connection ~ 8550 6700
+Wire Wire Line
+	7750 6650 7750 6700
+Connection ~ 7750 6700
+Wire Wire Line
+	3500 7300 4250 7300
+Wire Wire Line
+	3600 7300 3600 7650
+Wire Wire Line
+	3850 7300 3850 7650
+Connection ~ 3600 7300
+Wire Wire Line
+	4100 7300 4100 7650
+Connection ~ 3850 7300
+Connection ~ 4100 7300
+Wire Wire Line
+	2900 7300 3200 7300
+Wire Wire Line
+	2900 7100 2900 7700
+Wire Wire Line
+	3100 7700 3100 7300
+Connection ~ 3100 7300
+Text Label 2900 7100 1    60   ~ 0
+V33
+Connection ~ 2900 7300
+Wire Wire Line
+	2900 8000 2900 8200
+Wire Wire Line
+	2900 8200 4100 8200
+Wire Wire Line
+	3100 8000 3100 8200
+Connection ~ 3100 8200
+Wire Wire Line
+	3600 8200 3600 7950
+Connection ~ 3400 8200
+Wire Wire Line
+	3850 8200 3850 7950
+Connection ~ 3600 8200
+Wire Wire Line
+	4100 8200 4100 7950
+Connection ~ 3850 8200
+$Comp
+L GND #PWR5
+U 1 1 57C1C7B2
+P 3400 8300
+F 0 "#PWR5" H 3400 8050 50  0001 C CNN
+F 1 "GND" H 3400 8150 50  0000 C CNN
+F 2 "" H 3400 8300 50  0000 C CNN
+F 3 "" H 3400 8300 50  0000 C CNN
+	1    3400 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 8200 3400 8300
+Text Label 7350 7750 0    60   ~ 0
+V33
+$Comp
+L R-RESCUE-4port-usb-hub R25
+U 1 1 57C1D3FE
+P 5550 6400
+F 0 "R25" V 5630 6400 50  0000 C CNN
+F 1 "680R/1%" V 5550 6400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5480 6400 50  0001 C CNN
+F 3 "" H 5550 6400 50  0000 C CNN
+	1    5550 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 6400 5950 6400
+$Comp
+L GND #PWR12
+U 1 1 57C1D5C0
+P 5300 6400
+F 0 "#PWR12" H 5300 6150 50  0001 C CNN
+F 1 "GND" H 5300 6250 50  0000 C CNN
+F 2 "" H 5300 6400 50  0000 C CNN
+F 3 "" H 5300 6400 50  0000 C CNN
+	1    5300 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 6400 5400 6400
+$Comp
+L C-RESCUE-4port-usb-hub C21
+U 1 1 57C1DA2C
+P 5350 8200
+F 0 "C21" H 5375 8300 50  0000 L CNN
+F 1 "1uF" V 5375 8100 50  0000 R TNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5388 8050 50  0001 C CNN
+F 3 "" H 5350 8200 50  0000 C CNN
+	1    5350 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-4port-usb-hub R24
+U 1 1 57C1DBA1
+P 5150 8200
+F 0 "R24" V 5230 8200 50  0000 C CNN
+F 1 "47k" V 5150 8200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 8200 50  0001 C CNN
+F 3 "" H 5150 8200 50  0000 C CNN
+	1    5150 8200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-4port-usb-hub R23
+U 1 1 57C1DC67
+P 4950 8200
+F 0 "R23" V 5030 8200 50  0000 C CNN
+F 1 "10k" V 4950 8200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4880 8200 50  0001 C CNN
+F 3 "" H 4950 8200 50  0000 C CNN
+	1    4950 8200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 8050 4950 7900
+Wire Wire Line
+	4950 7900 5350 7900
+Wire Wire Line
+	5150 7750 5150 8050
+Wire Wire Line
+	5350 7900 5350 8050
+Connection ~ 5150 7900
+Wire Wire Line
+	5950 7750 5150 7750
+Wire Wire Line
+	5150 8350 5150 8500
+Wire Wire Line
+	5150 8500 5350 8500
+Wire Wire Line
+	5350 8500 5350 8350
+$Comp
+L GND #PWR11
+U 1 1 57C1E0D2
+P 5250 8600
+F 0 "#PWR11" H 5250 8350 50  0001 C CNN
+F 1 "GND" H 5250 8450 50  0000 C CNN
+F 2 "" H 5250 8600 50  0000 C CNN
+F 3 "" H 5250 8600 50  0000 C CNN
+	1    5250 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 8600 5250 8500
+Connection ~ 5250 8500
+Wire Wire Line
+	4950 8500 4950 8350
+$Comp
+L SY6280 U5
+U 1 1 57C1F0FE
+P 3550 6100
+F 0 "U5" H 3550 6400 60  0000 C CNN
+F 1 "SY6280" H 3550 5800 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3500 6100 60  0001 C CNN
+F 3 "" H 3500 6100 60  0001 C CNN
+	1    3550 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5950 4100 5950
+$Comp
+L C-RESCUE-4port-usb-hub C19
+U 1 1 57C1F492
+P 4000 5700
+F 0 "C19" H 4025 5800 50  0000 L CNN
+F 1 "10uF/6.3V" H 4025 5600 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4038 5550 50  0001 C CNN
+F 3 "" H 4000 5700 50  0000 C CNN
+	1    4000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 57C1F707
+P 4000 5450
+F 0 "#PWR7" H 4000 5200 50  0001 C CNN
+F 1 "GND" H 4000 5300 50  0000 C CNN
+F 2 "" H 4000 5450 50  0000 C CNN
+F 3 "" H 4000 5450 50  0000 C CNN
+	1    4000 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 5450 4000 5550
+Wire Wire Line
+	4000 5850 4000 6250
+Connection ~ 4000 5950
+$Comp
+L GND #PWR1
+U 1 1 57C20020
+P 2950 6100
+F 0 "#PWR1" H 2950 5850 50  0001 C CNN
+F 1 "GND" H 2950 5950 50  0000 C CNN
+F 2 "" H 2950 6100 50  0000 C CNN
+F 3 "" H 2950 6100 50  0000 C CNN
+	1    2950 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 6100 3150 6100
+Text Label 3100 5950 1    60   ~ 0
+5V-DP
+Wire Wire Line
+	3100 5950 3150 5950
+Text Label 3650 4800 3    60   ~ 0
+5V-DP
+Text Label 5150 4800 3    60   ~ 0
+5V-DP
+Text Label 6550 4800 3    60   ~ 0
+5V-DP
+Text Label 8050 4800 3    60   ~ 0
+5V-DP
+$Comp
+L R-RESCUE-4port-usb-hub R22
+U 1 1 57C217CE
+P 3050 6450
+F 0 "R22" V 3130 6450 50  0000 C CNN
+F 1 "4.7k/1%" H 3050 6450 50  0000 R TNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2980 6450 50  0001 C CNN
+F 3 "" H 3050 6450 50  0000 C CNN
+	1    3050 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6250 3050 6250
+Wire Wire Line
+	3050 6250 3050 6300
+$Comp
+L GND #PWR2
+U 1 1 57C21C66
+P 3050 6650
+F 0 "#PWR2" H 3050 6400 50  0001 C CNN
+F 1 "GND" H 3050 6500 50  0000 C CNN
+F 2 "" H 3050 6650 50  0000 C CNN
+F 3 "" H 3050 6650 50  0000 C CNN
+	1    3050 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6600 3050 6650
+$Comp
+L R-RESCUE-4port-usb-hub R26
+U 1 1 57C227D1
+P 8300 7300
+F 0 "R26" V 8380 7300 50  0000 C CNN
+F 1 "10k" V 8300 7300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8230 7300 50  0001 C CNN
+F 3 "" H 8300 7300 50  0000 C CNN
+	1    8300 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-4port-usb-hub R27
+U 1 1 57C228DF
+P 8800 7300
+F 0 "R27" V 8880 7300 50  0000 C CNN
+F 1 "5.1k" V 8800 7300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8730 7300 50  0001 C CNN
+F 3 "" H 8800 7300 50  0000 C CNN
+	1    8800 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR22
+U 1 1 57C22987
+P 8050 7300
+F 0 "#PWR22" H 8050 7050 50  0001 C CNN
+F 1 "GND" H 8050 7150 50  0000 C CNN
+F 2 "" H 8050 7300 50  0000 C CNN
+F 3 "" H 8050 7300 50  0000 C CNN
+	1    8050 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 7300 9050 7300
+Wire Wire Line
+	8450 7300 8650 7300
+Wire Wire Line
+	7350 7000 8550 7000
+Wire Wire Line
+	8550 7000 8550 7300
+Connection ~ 8550 7300
+Wire Wire Line
+	8050 7300 8150 7300
+Text Label 9050 7300 0    60   ~ 0
+5V-DP
+$Comp
+L USB_B-RESCUE-4port-usb-hub P5
+U 1 1 57C34230
+P 9750 3350
+F 0 "P5" H 9950 3150 50  0000 C CNN
+F 1 "USB_B" H 9700 3550 50  0000 C CNN
+F 2 "Connect:USB_B" V 9700 3250 50  0001 C CNN
+F 3 "" V 9700 3250 50  0000 C CNN
+	1    9750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR25
+U 1 1 57C35251
+P 9850 3950
+F 0 "#PWR25" H 9850 3700 50  0001 C CNN
+F 1 "GND" H 9850 3800 50  0000 C CNN
+F 2 "" H 9850 3950 50  0000 C CNN
+F 3 "" H 9850 3950 50  0000 C CNN
+	1    9850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3650 9850 3950
+$Comp
+L Inductor-FerriteBead_EN60617_04-03-10_Date20121108-RESCUE-pirinel-alpha L8
+U 1 1 57C353DD
+P 10250 3250
+F 0 "L8" H 10250 3425 50  0000 C CNN
+F 1 "600R/200mA" V 10275 3075 50  0000 C BNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10250 3250 50  0001 C CNN
+F 3 "" H 10250 3250 50  0000 C CNN
+	1    10250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3250 10100 3250
+$Comp
+L GND #PWR27
+U 1 1 57C355DD
+P 10500 3250
+F 0 "#PWR27" H 10500 3000 50  0001 C CNN
+F 1 "GND" H 10500 3100 50  0000 C CNN
+F 2 "" H 10500 3250 50  0000 C CNN
+F 3 "" H 10500 3250 50  0000 C CNN
+	1    10500 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 3250 10500 3250
+Text GLabel 7350 6250 2    60   Input ~ 0
+D0+
+Text GLabel 7350 6400 2    60   Input ~ 0
+D0-
+Text GLabel 9650 3650 3    60   Input ~ 0
+D0-
+Text GLabel 9750 3650 3    60   Input ~ 0
+D0+
+$Comp
+L GND #PWR26
+U 1 1 57E71AA5
+P 10200 4600
+F 0 "#PWR26" H 10200 4350 50  0001 C CNN
+F 1 "GND" H 10200 4450 50  0000 C CNN
+F 2 "" H 10200 4600 50  0000 C CNN
+F 3 "" H 10200 4600 50  0000 C CNN
+	1    10200 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 4600 10200 4600
+Wire Wire Line
+	4000 6250 3950 6250
+Text Label 9550 4700 3    60   ~ 0
+5V
+Text Label 4100 5950 0    60   ~ 0
+5V
+Wire Wire Line
+	9550 3650 9550 4000
+Wire Wire Line
+	9550 4300 9550 4700
+Text Label 7750 6650 1    60   ~ 0
+5V-DP
+$Comp
+L CONN_01X03 P6
+U 1 1 5816C1AA
+P 10500 4600
+F 0 "P6" H 10500 4800 50  0000 C CNN
+F 1 "CONN_01X03" V 10600 4600 50  0000 C CNN
+F 2 "w_conn_misc:dc_socket" H 10500 4400 50  0000 C CNN
+F 3 "" H 10500 4600 50  0000 C CNN
+	1    10500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4700 9700 4700
+Wire Wire Line
+	10000 4700 10300 4700
+NoConn ~ 10300 4500
+$Comp
+L D D1
+U 1 1 5816F45A
+P 9850 4700
+F 0 "D1" H 9850 4800 50  0000 C CNN
+F 1 "D" H 9850 4600 50  0000 C CNN
+F 2 "Diodes_SMD:SMB_Standard" H 9850 4700 50  0001 C CNN
+F 3 "" H 9850 4700 50  0000 C CNN
+	1    9850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 58170069
+P 9550 4150
+F 0 "D2" H 9550 4250 50  0000 C CNN
+F 1 "D" H 9550 4050 50  0000 C CNN
+F 2 "Diodes_SMD:SMB_Standard" H 9550 4150 50  0001 C CNN
+F 3 "" H 9550 4150 50  0000 C CNN
+	1    9550 4150
+	0    -1   -1   0   
+$EndComp
+Text Label 9550 3850 2    60   ~ 0
+5V-IN-USB
+Text Label 4950 8500 2    60   ~ 0
+5V-IN-USB
+$Comp
+L CONN_01X01 P7
+U 1 1 582111AF
+P 11800 3250
+F 0 "P7" H 11878 3291 50  0000 L CNN
+F 1 "CONN_01X01" H 11878 3200 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 11800 3250 50  0001 C CNN
+F 3 "" H 11800 3250 50  0000 C CNN
+	1    11800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P8
+U 1 1 58211401
+P 11800 3400
+F 0 "P8" H 11878 3441 50  0000 L CNN
+F 1 "CONN_01X01" H 11878 3350 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 11800 3400 50  0001 C CNN
+F 3 "" H 11800 3400 50  0000 C CNN
+	1    11800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 582114A4
+P 11800 3550
+F 0 "P9" H 11878 3591 50  0000 L CNN
+F 1 "CONN_01X01" H 11878 3500 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 11800 3550 50  0001 C CNN
+F 3 "" H 11800 3550 50  0000 C CNN
+	1    11800 3550
+	1    0    0    -1  
+$EndComp
+Text Notes 3200 6550 0    39   ~ 0
+Iset = 6800 / R22 = 1.4A
+$EndSCHEMATC
